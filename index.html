@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <!-- CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.6.0/confetti.browser.min.js"></script>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style.css"> 
+    <!-- Icon -->
+    <link rel="Icon" href="image/teddy-bear.png" type="images">
+</head>
+<body>
+    <div class="hearts"></div>
+    <div class="container">
+        <!-- Step 1 -->
+        <div class="step active" id="step1">
+            <img src="image/step2.gif" alt="Cute Bear" class="bear-img">
+            <h1>Heyyy, Would You Be My Valentine?💝</h1>
+            <div class="buttons">
+                <button class="btn btn-yes" onclick="goToStep2()">Yes</button>
+                <button class="btn btn-no" onmouseover="moveButton(this)" onclick="moveButton(this)">No</button>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step" id="step2">
+            <img src="image/dudu-twisting-dance.gif" alt="Cute Bear with Hearts" class="bear-img">
+            <h1>Are you sure you want to be my valentine?💕</h1>
+            <div class="buttons">
+                <button class="btn btn-yes" onclick="goToStep3()">Yes, 100% Sure</button>
+                <button class="btn btn-no" onmouseover="moveButton(this)" onclick="moveButton(this)">Let me think...</button>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step" id="step3">
+            <img src="image/step22.gif" alt="Cute Bear in Love" class="bear-img">
+            <h1>Promise me you'll always be my valentine❤️</h1>
+            <div class="buttons">
+                <button class="btn btn-yes" onclick="finalStep()">Yes, I Promise</button>
+            </div>
+        </div>
+
+        <!-- Final Message -->
+        <div class="final-message">
+            <img src="image/stafford-matt-unscreen.gif" alt="Cute Bear in Love" class="bear-img">
+            <p>Yeayyyyy, you made valentine this time so special for me, I Love You So Much!🥰</p>
+            <p style="margin-top: 15px;">Happy Valentine sayangg, Makasiii udah datang dan menjadi momen paling indah dalam hidup aku. 
+            Bersama kamu, hal-hal sederhana terasa begitu berarti. Kamu bukan hanya orang yang aku sayang, tapi juga tempat aku merasa tenang dan bisa dipahami.</p>
+            <p style="margin-top: 15px;">Makasii juga atas kesabaran, perhatian, dan semua upaya yang kamu lakukan untuk kita. Aku harap kita selalu bisa 
+                    mendukung dan memperkuat satu sama lain, bukan hanya hari ini, tetapi setiap hari ke depannya.</p>
+            <p style="margin-top: 15px;">Sekali lagi Happy Valentine Day Sayangnya akuuu❤️❤️❤️❤️❤️</p>
+            <p style="margin-top: 15px;">You can text me by clicking the button below, I'm waiting for you!! 💌</p>
+        </div>
+        
+        <a href="https://wa.me/+6287877457605?text=Heyyy%20dear,%20its%20me,%20your%20valentine%20❤️" class="whatsapp-btn" target="_blank">
+            Text me here 💌
+        </a>        
+    </div>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>
